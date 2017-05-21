@@ -16,7 +16,7 @@ def __setup_db():
     if not os_path.exists(PYDATASET_HOME):
         # create $HOME/.pydataset/
         os_mkdir(PYDATASET_HOME)
-        print('initiated datasets repo at: {}'.format(PYDATASET_HOME))
+        print(('initiated datasets repo at: {}'.format(PYDATASET_HOME)))
 
         # copy the resources.tar.gz from the module files.
 

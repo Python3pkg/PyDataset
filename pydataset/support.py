@@ -38,10 +38,10 @@ def find_similar(query):
     result = search_similar(query)
 
     if result:
-        top_words, ratios = zip(*result)
+        top_words, ratios = list(zip(*result))
 
         print('Did you mean:')
-        print(', '.join(t for t in top_words))
+        print((', '.join(t for t in top_words)))
         # print(', '.join('{:.1f}'.format(r*100) for r in ratios))
 
     else:
